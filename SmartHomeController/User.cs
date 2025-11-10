@@ -62,5 +62,31 @@ namespace SmartHomeController
                 Console.WriteLine("User is not logged in!");
             }
         }
+        public void ControlDevice(int deviceId, string deviceName, string deviceAction)
+        {
+            if (!IsLoggedIn)
+            {
+                Console.WriteLine($"Performing Action {deviceAction} on {deviceName}");
+                // Add logic to control smart device
+            }
+            else
+            {
+                Console.WriteLine("Please log in to control device!");
+            }
+        }
+
+        public User(int userId, string username, string password, string contactinfo, bool isLoggedIn)
+        {
+            this.UserId = userId;
+            this.Username = username;
+            this.Password = password;
+            this.Contactinfo = contactinfo;
+            this.IsLoggedIn = isLoggedIn;
+            this.UserId = userId;
+            this.Username = username;
+            this.Password = password;
+            this.Contactinfo = contactinfo;
+            this.IsLoggedIn = false;
+        }
     }
 }
