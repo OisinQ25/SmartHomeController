@@ -36,6 +36,7 @@ namespace SmartHomeController
             get { return isLoggedIn; } 
             set { isLoggedIn = value; }
         }
+
     }
 
 }
